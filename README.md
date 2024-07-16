@@ -1,16 +1,30 @@
-# ev_charging_app
+# EV Charging Stations Mobile Application
 
-A new Flutter project.
+![EV Charging Stations - Home Page](./assets/images/final_result/ev_home_mockUp.jpg)
 
-## Getting Started
+This project is a mobile application built using Flutter for EV charging stations. I built it based on a UI/UX design on Behance that I liked, and here is the design on Behance: [Behance Design](https://shorturl.at/ZJD4i).
 
-This project is a starting point for a Flutter application.
+## Pages
 
-A few resources to get you started if this is your first Flutter project:
+The mobile application contains three pages:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. **Home Page**: Displays a picture with a little information about the car and the nearby stations.
+2. **Details Page**: Provides more details about the car, such as distance, tire pressure, and more.
+3. **Map Stations Page**: Shows all the stations on the map. A route is drawn between a car and one of those stations as a simulation of a production application. You can get more information about each station by clicking on it, which brings up a bottom sheet with details about the station, such as the chargers it has, their number, etc.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Architecture
+
+The application's architecture is based on the Bloc architecture, focusing solely on the presentation layer. This architecture helps maintain best practices, such as the separation of concerns between the UI and business logic.
+
+## Code Quality
+
+The code is modular, ensuring maintainability and scalability. Clean code principles are respected as much as possible, which is evident in the naming conventions for variables, functions, classes, etc.
+
+## Known Issues
+
+In the code for the car image on the home page, there's a small issue with responsiveness. I'll discuss this in upcoming articles and posts, focusing on how to handle several children in complex UIs using the `CustomMultiChildLayout` class instead of the `Stack` class.
+
+## API Integration
+
+On the map stations page, a route is drawn between a car and one of the stations using Open Route Service. I will discuss the API in upcoming posts and articles on LinkedIn, Medium, and YouTube.
+
